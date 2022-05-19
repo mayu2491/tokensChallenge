@@ -1,0 +1,12 @@
+<form class="games-modal">
+  <mat-form-field appearance="fill">
+    <mat-label>Games</mat-label>
+    <mat-select [(ngModel)]="selectedValue" name="game">
+      <mat-option *ngFor="let game of games" [value]="game.value">
+        {{game.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <p> Tokens needed: {{selectedValue}} </p>
+  <button mat-raised-button color="primary" (click)="playGame()">Play!!</button>
+</form>

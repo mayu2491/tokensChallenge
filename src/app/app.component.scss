@@ -1,0 +1,24 @@
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  padding: 5px;
+  top: 22%;
+  width: max-content;
+  height: max-content;
+  overflow: auto;
+  background-color: #ffff;
+  border-radius: 25px;
+  border: 2px solid #1976d2;
+}
+
+.history-table {
+  padding: 15px;
+  width: 100%;
+}
+
+::ng-deep.mat-tab-label, ::ng-deep.mat-tab-label-active{
+  min-width: 300px!important;
+  padding: 3px!important;
+  margin: 3px!important;
+ }

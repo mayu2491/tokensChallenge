@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>Welcome, here is your current balance: {{this.tokensBalance}}</h1>
+<div mat-dialog-content>
+  <p>How many tokes do you want?</p>
+  <mat-form-field appearance="fill">
+    <mat-label>Tokens number</mat-label>
+    <input matInput [(ngModel)]="tokensValue">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="buyTokens()">Buy</button>
+  <button mat-button (click)="onCancelClick()">Cancel</button>
+</div>
+
